@@ -6,13 +6,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-<p>Find me in app/views/users/show.html.erb　user 詳細ページ ログインして最初に来るぺージ</p>
-<p>Find me in app/views/books/index.html.erb　books投稿一覧</p>
-
 <div class="container px-5 pm-0">
   <div class="row">
   
-<%= render 'books/book1',{user: @user, book: @book} %>
+<%= render 'books/book',{user: @user, book: @book} %>
 
 <div class="col-md-8 offset-md-1">
 

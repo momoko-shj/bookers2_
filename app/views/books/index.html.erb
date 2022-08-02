@@ -1,5 +1,6 @@
-
-<p>Find me in app/views/books/index.html.erb　books投稿一覧</p>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+</head>
 
 
 <% if @book.errors.any?%>
@@ -15,7 +16,7 @@
 <div class="container px-5 pm-0">
 <div class="row">
  
-  <%= render 'book', books: @books %>
+  <%= render 'books/book', user: @user, book: @book %>
 
 <div class="col-md-8 offset-md-1">
 
